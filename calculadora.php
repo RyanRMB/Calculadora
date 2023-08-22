@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title> Calculadora - Soma </title>
+		<title> Calculadora </title>
 			<style>
 				.op-mat 
 				{
