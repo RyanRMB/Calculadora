@@ -119,7 +119,7 @@
 	</head>
 	<body style="background-color:Black;color:White;"> 
 		<h1><ul><li>Soma</li></ul></h1> 
-		<form class="calculadora" method="GET">
+		<form class="calculadora" action="opoption.php" method="GET">
 			Operador 1: <input style="width: 150px; margin-top: 15px; height: 40px;" type="text" name="op1">
 			<br></br>
 			Operador 2: <input style="width: 150px; height: 40px;" type="text" name="op2">
@@ -141,46 +141,5 @@
 			<br></br>
 			<input class="resultado" type="submit" value="=">
 		</form>
-	<?PHP
-	$v1 = $_GET["op1"];
-	$v2 = $_GET["op2"];
-	if (isset($_GET["op1"]) && isset($_GET["op2"]) && isset($_GET["operacao"])) 
-	{
-		$operacao= $_GET["operacao"];
-		if (!is_numeric($v1) || !is_numeric($v2)) 
-		{
-			echo "<h1>Por favor, digite somente números.</h1>";
-			echo "<br></br>";
-			echo "<h3>Ps:Caso queira calcular números decimais utilize '.' e não ','.</h3>";
-		} else {
-			switch ($operacao)
-			{
-				case "+":
-				$result = $v1 + $v2;
-				echo "<h1>Resultado: $result</h1>";
-				break;
-				
-				case "-":
-				$result = $v1 - $v2;
-				echo "<h1>Resultado: $result</h1>";
-				break;
-				
-				case "*":
-				$result = $v1 * $v2;
-				echo "<h1>Resultado: $result</h1>";
-				break;
-				
-				case "/":
-				$result = $v1 / $v2;
-				echo "<h1>Resultado: $result</h1>";
-				break;
-			}
-		}
-	} else {
-		echo "<h1>Por favor, selecione uma operação, verifique se preencheu os campos corretamente e tente novamente.</h1>";
-		echo "<br></br>";
-		echo "<h3>Ps:Caso queira calcular números decimais utilize '.' e não ','.</h3>";
-	}
-    ?>
-	</body>
+    </body>
 </html>
