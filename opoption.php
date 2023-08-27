@@ -7,6 +7,8 @@
 	include 'seno.php';
 	include 'tangente.php';
 	include 'potencia.php';
+	include 'logdez.php';
+	include 'log.php';
 	
 	$v1 = $_GET["op1"];
 	$v2 = $_GET["op2"];
@@ -30,6 +32,11 @@
 					
 					case "tan":
 					$result = tangente($v1);
+					header("Location: calculadora.php?result=$result");
+					break;
+					
+					case "log":
+					$result = logdez($v1);
 					header("Location: calculadora.php?result=$result");
 					break;
 					
@@ -68,6 +75,11 @@
 						
 						case "potencia":
 						$result = potencia($v1, $v2);
+						header("Location: calculadora.php?result=$result");
+						break;
+						
+						case "log":
+						$result = logaritmo ($v1, $v2);
 						header("Location: calculadora.php?result=$result");
 						break;
 					}	
