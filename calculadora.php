@@ -8,6 +8,21 @@
 					background-color: #f5f5f5;
 					color: black;
 					border: 5px outset #daecee;
+					background-image: linear-gradient(to right, 
+					rgba(218, 236, 238, 3),
+					rgba(218, 236, 238, 0.25),
+					rgba(218, 236, 238, 0.2),
+					rgba(218, 236, 238, 0.15),
+					rgba(218, 236, 238, 0.1),
+					rgba(218, 236, 238, 0),
+					#f5f5f5,
+					rgba(141, 153, 154, 0),
+					rgba(141, 153, 154, 0.05),
+					rgba(141, 153, 154, 0.1),
+					rgba(141, 153, 154, 0.15),
+					rgba(141, 153, 154, 0.2),
+					rgba(141, 153, 154, 0.25)
+					);
 					border-radius: 5px; 
 					font-size: 70px;
 					position: relative;
@@ -31,6 +46,7 @@
 					background-color: #e0ffff;
 					color: black;
 					border: 5px outset #b0e0e6;
+					background-image: linear-gradient(to right, #b0e0e6,  #e0ffff, #b0e0e6);
 					font-size: 70px;
 					position: relative;
 					cursor: pointer;
@@ -264,6 +280,11 @@
 		<pre style="position: relative; left: 1350px; bottom:430px;">
 		Se for elevar um número o operador 1 é o número 
 		a ser elevado, e o operador 2 o expoente.
+		</pre>
+		<pre style="position: relative; left: 1350px; bottom:430px;">
+		Se for calcular um logaritmo o operador 2 será a 
+		base, e caso deixe o operador 2 vazio será 
+		retornado o Log de base 10.
 		</pre>
 		<?PHP 
 		$result = $_GET["result"];
